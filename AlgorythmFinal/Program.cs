@@ -14,7 +14,6 @@ namespace AlgorithmsAnalysis
         {
             List<IResercheable> algorythmList = new List<IResercheable>()
             {
-                new CountingSort(2000,"Counting Sort"),
                 new MergeSort(2000, "Merge Sort"),
                 new BubbleSort(2000, "BubbleSort"),
                 new TimSort(20000, "TimSort"),
@@ -24,7 +23,7 @@ namespace AlgorithmsAnalysis
                 new Gorner0(10000,"Direct"),
                 new Multiplication(20000, "Multiplication"),
                 new CycleSort(2000, "CycleSort"),
-                new QuickSort(12000, "QuickSort")
+                new QuickSort(12000, "QuickSort")*/
             };
             
             foreach (var algol in algorythmList)

@@ -6,20 +6,20 @@
         {
             MergeSortAlgorithm(array, 0, array.Length - 1);
         }
-
+        // рекурсивную реализацию алгоритма сортировки слиянием (Merge sort) для массива целых чисел.
         static void MergeSortAlgorithm(int[] arr, int left, int right)
         {
             if (left < right)
             {
                 int mid = (left + right) / 2;
 
-                MergeSortAlgorithm(arr, left, mid);
-                MergeSortAlgorithm(arr, mid + 1, right);
+                MergeSortAlgorithm(arr, left, mid); // сортировка левой части массива
+                MergeSortAlgorithm(arr, mid + 1, right);// сортировка правой части массива 
 
-                Merge(arr, left, mid, right);
+                Merge(arr, left, mid, right); 
             }
         }
-
+        // метод слияние отсортированных массивов
         static void Merge(int[] arr, int left, int mid, int right)
         {
             int n1 = mid - left + 1;
@@ -67,7 +67,7 @@
                 k++;
             }
         }
-
+        // инцилизация 
         public MergeSort(int size, string name) : base(size, name)
         {
         }

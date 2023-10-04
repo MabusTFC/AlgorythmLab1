@@ -2,6 +2,7 @@
 {
     public class Summ : IResercheable
     {
+        // Запуск и суммирование
         public override void Run(int[] array, int value)
         {
             int sum = 0;

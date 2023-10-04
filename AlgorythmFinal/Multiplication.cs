@@ -2,6 +2,7 @@
 {
     public class Multiplication : IResercheable
     {
+        // Запуск перемножение 
         public override void Run(int[] array, int value)
         {
             int difference = 1;

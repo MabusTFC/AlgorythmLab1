@@ -2,6 +2,7 @@
 {
     public class QuickSort : IResercheable
     {
+        // принимает массив и возвращает отсортированный массив 
         public static int[] Calculate(int[] vector)
         {
             if (vector.Length <= 1) return vector;
@@ -25,9 +26,9 @@
             int[] lowElements = new int[lowCount];
             int[] equalElements = new int[equalCount];
 
-            int lowindex = 0;
-            int bigindex = 0;
-            int equalindex = 0;
+            int lowindex = 0; //Для перекладки элемента в нужное место массива
+            int bigindex = 0; //
+            int equalindex = 0; //
 
             for (int i = 0; i < vector.Length; i++)
             {
@@ -52,13 +53,13 @@
                 else
                     vector[i] = bigElements[i - lowElements.Length - equalElements.Length];
             }
-            return vector;
+            return vector; // возвращение отсортированного массива
         }
 
         public QuickSort(int size, string name) : base(size, name)
         {
         }
-
+        // Запуск
         public override void Run(int[] array, int value = 0)
         {
             Calculate(array);
